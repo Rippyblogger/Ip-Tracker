@@ -24,7 +24,9 @@ const ipFetch = async (baseURL, apiKey, ipAddress) => {
     try {
         const data = await res.json();
         console.log(data);
-        return data
+        return data;
+
+        
     } catch (error) {
         console.log("error", error);
         // appropriately handle the error

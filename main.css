@@ -12,51 +12,5 @@
     display: flex;
     flex-direction: column;
     grid-template-rows: repeat(2, 1fr);
-    background-image: url(./images/christian-perner-UKLIuV8rAks-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.data-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 3rem;
-    margin: 3rem;
-    place-items: center;
-    background-color: white;
-    box-shadow: 3px 7px 9px 5px rgba(198, 204, 203, 0.8);
-    border-radius: 3px;
-}
-
-.data-content div{
     
 }
-
-.heading{
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1.5rem;
-}
-
-input::placeholder {
-    color: #5A49EE;
-    text-align: center;
-}
-
-input[type=text] {
-    flex-grow: 1;
-    height: 1.5rem;
-    width: 20rem;
-    vertical-align: middle;
-    border-radius: 3rem;
-    text-align: center;
-}
-
-/* .data-container{
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    border: 1px solid black;
-} */
-
