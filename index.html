@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./main.css" />
-		<script
-			src="https://kit.fontawesome.com/a9bc9a39c4.js"
-			crossorigin="anonymous"
-		></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <title>IP Tracker</title>
 </head>
+
 <body class="container">
     <div class="data-container">
-        <div class="data-content">
-            <div>
-                <p class="heading">Ip Address</p>
-                <form action="">
-                    <input id="ip-address" type="text"> <br>
-                    <input id="button" type="button" value="Search">
+        
+        <div>
+            <h2>IP Adddress Tracker</h2>
+            <form action="">
+                    <input id="ip-address" type="text" placeholder="Enter IP Address"> <br>
                 </form>
-            </div>
-            <div>
-                <p id="location" class="heading">Location</p>
-                <p></p>
-            </div>
-            <div>
-                <p id="isp" class="heading">ISP</p>
-                <p></p>
-            </div>
+
+                <div>
+                        <input id="button" type="button" value="Search">
+                    </div>
         </div>
     </div>
 
-    <div class="map">
+    <div class="results">
+
+        <div class="information">
+            <ul>
+                <li id="ipaddress">IP Address: </li>
+                <hr>
+                <li id="isp"> ISP: </li>
+                <hr>
+                <li id="country">Location: </li>
+                <hr>
+                <li id="timezone">Timezone: </li>
+            </ul>
+<!-- 
+            <p id="ipaddress">IP Address:</p>
+            
+            <p id="isp"> ISP:</p>
+            
+            <p id="country">Location:</p>
+            
+            <p id="region">Timezone:</p> -->
+            
+        </div>
+        
+        
+        <div id="mapid"></div>
         
     </div>
     <script src="./app.js"></script>
+    
 </body>
 </html>
