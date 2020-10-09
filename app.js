@@ -9,6 +9,7 @@ document.getElementById("button").addEventListener("click", function (event) {
 });
 
 
+
 function submit() {
     let ipAddress = document.getElementById("ip-address").value;
     ipFetch(baseURL, apiKey, ipAddress);
@@ -36,10 +37,10 @@ const ipFetch = async (baseURL, apiKey, ipAddress) => {
 function updateUI(data) {
     document.getElementById(
 			"ipaddress"
-		).innerHTML = `<b>IP Address: </b>  ${data.ip}`;
-    document.getElementById("isp").innerHTML = `<b>ISP:</b>  ${data.isp}`;
-    document.getElementById("country").innerHTML = `<b>Location: </b>  ${data.location.city}, ${data.location.region}, ${data.location.country}`;
-    document.getElementById("timezone").innerHTML = `<b>Timezone: </b>  ${data.location.timezone}`;
+		).innerHTML = `<b>IP Address: &nbsp</b>  ${data.ip}`;
+    document.getElementById("isp").innerHTML = `<b>ISP: &nbsp</b>  ${data.isp}`;
+    document.getElementById("country").innerHTML = `<b>Location: &nbsp</b>  ${data.location.city}, ${data.location.region}, ${data.location.country}`;
+    document.getElementById("timezone").innerHTML = `<b>Timezone: &nbsp</b>  ${data.location.timezone}`;
 }
 
 
@@ -65,3 +66,4 @@ function ipmap(data) {
 		);
     let popup = newMarker.bindPopup("<b>Here</b>");
 }
+

@@ -46,7 +46,7 @@ input[type=button] {
     padding: 1rem 2rem;
     color: black;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 input[type=button]:hover {
